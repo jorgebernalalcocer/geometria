@@ -6,6 +6,9 @@ public class Circulo_JBA extends FiguraGeometrica_JBA {
 	
 	public Circulo_JBA(double r, String tipoFigura) {
 		super(tipoFigura);
+		if (radio<0){
+			Math.abs(radio);
+		}
 		radio = r;
 	}
 
